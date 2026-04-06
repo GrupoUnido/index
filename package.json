@@ -1,0 +1,32 @@
+{
+  "name": "pagina_web_approamoli",
+  "version": "1.0.0",
+  "description": "Backend Node.js para registro y login de usuarios con SQL Server - APPROAMOLI",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sql-server",
+    "mssql",
+    "login",
+    "registro",
+    "approamoli"
+  ],
+  "author": "APPROAMOLI",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "mssql": "^12.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

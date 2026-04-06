@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Nosotros — APPROAMOLI.Online(Proyecto de prueba)</title>
+  <meta name="description" content="Conoce la historia, misión, visión, valores y ubicación de Approamoli." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body class="page-nosotros">
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">🐤</span>
+        <span class="logo-text">APPROAMOLI<span class="dot">.</span>Online(Proyecto de prueba)</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="producto.html" class="nav-link">Productos</a>
+        <a href="Nosotros.html" class="nav-link">Nosotros</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-cta">
+        <button class="icon-btn" id="wishlistBtn" aria-label="Favoritos" title="Favoritos">
+          ❤ <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Carrito" title="Carrito">
+          🛒 <span class="badge" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Video Banner -->
+    <section class="hero-video-container" aria-label="Banner de video">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="img/nosotros/banner-poster.jpg">
+        <source src="imagenes/3117818-hd_1920_1080_30fps.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+      </video>
+
+      <div class="video-overlay"></div>
+
+      <div class="container video-content">
+        <h1 class="hero-title">Sobre nosotros</h1>
+        <p class="hero-sub">Resultados que se ven. Nutrición que se nota.</p>
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section class="section alt">
+      <div class="container split">
+
+        <!-- COLUMNA IZQUIERDA -->
+        <div class="about-vertical">
+
+          <!-- QUIÉNES SOMOS -->
+          <article class="vcard">
+            <div class="vcard-media">
+              <img src="imagenes/Niñas alimentando gallinas en el campo.png" alt="Quiénes somos - Approamoli">
+            </div>
+            <div class="vcard-body">
+              <h2 class="vcard-title">¿Quiénes somos?</h2>
+              <p class="muted justify">
+                En APPROAMOLI somos más que una empresa de productos agropecuarios; somos aliados del campo y del crecimiento sostenible.
+                Nacimos con la visión de apoyar a productores, criadores y emprendedores del sector agropecuario, ofreciendo alimentos,
+                premezclas y soluciones que fortalecen la salud animal, mejoran el rendimiento y elevan la calidad de la producción.
+              </p>
+            </div>
+          </article>
+
+          <!-- MAPA -->
+          <article class="vcard">
+            <div class="vcard-body">
+              <h3 class="vcard-title">Nuestra ubicación</h3>
+              <p class="muted" style="margin-top:-6px;">
+                Encuéntranos fácilmente en el mapa o abre la ruta en Google Maps.
+              </p>
+
+              <div class="map-frame">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d978.8771188784557!2d-70.60754013404753!3d19.43308791537638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1d010f6038283%3A0x11dadaed7f149169!2sAPPROAMOLI%20Inc.!5e0!3m2!1ses!2sdo!4v1770299872022!5m2!1ses!2sdo"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Mapa de ubicación de APPROAMOLI">
+                </iframe>
+              </div>
+
+              <div class="map-actions">
+                <a class="btn outline" target="_blank" rel="noopener"
+                   href="https://www.google.com/maps?q=APPROAMOLI%20Inc.">
+                  Cómo llegar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ✅ IMAGEN PARA RELLENAR EL ESPACIO DEBAJO DEL MAPA (OPCIÓN 2) -->
+          <article class="vcard image-fill" aria-label="Imagen representativa">
+            <div class="vcard-media">
+              <!-- Cambia esta imagen por la que quieras: campo, granja, aves, maíz, soya, etc. -->
+              <img src="imagenes/marek-piwnicki-PUVVsYJPh78-unsplash.jpg"
+                   alt="Imagen representativa del trabajo en el campo">
+            </div>
+          </article>
+
+        </div>
+
+        <!-- COLUMNA DERECHA -->
+        <div class="about-right-stack">
+
+          <!-- HISTORIA -->
+          <div class="panel">
+            <h3>Nuestra historia</h3>
+            <p class="muted justify">
+              APPROAMOLI nace de una necesidad real del campo dominicano. En el año 1997, en medio de la crisis que afectaba al sector
+              agropecuario del país, surge la iniciativa de unirse para buscar soluciones que ayudaran a los productores a sostener su trabajo.
+              El señor Ambiorix Bienvenido Cabrera, junto al doctor Angelino Perrone, impulsa las primeras reuniones con medianos y pequeños
+              productores, con el objetivo de reducir los costos de producción. De esa visión surge la idea de importar directamente materia
+              prima al país, especialmente maíz y soya, componentes esenciales para la alimentación de aves y cerdos. En abril de ese mismo año
+              se conforma el Consejo de Instituciones Pecuarias del Cibao, conocido como “El Consejito”, que más adelante daría paso a lo que hoy
+              conocemos como la Asociación de Pequeños Productores Avícolas Moca-Licey, INC. — APPROAMOLI.
+            </p>
+
+            <div class="mini-cards">
+              <div class="mini">
+                <strong>+120</strong>
+                <span class="muted">Productos</span>
+              </div>
+              <div class="mini">
+                <strong>Premium</strong>
+                <span class="muted">Calidad</span>
+              </div>
+              <div class="mini">
+                <strong>24/7</strong>
+                <span class="muted">Pedidos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PILARES: MISIÓN / VISIÓN / VALORES -->
+          <section class="about-pillars" aria-label="Misión, visión y valores">
+            <header class="about-pillars-head">
+              <h3 class="about-pillars-title">Misión, Visión y Valores</h3>
+              <p class="muted about-pillars-sub">
+                Propósito, dirección y principios que sostienen cada decisión de Approamoli.
+              </p>
+            </header>
+
+            <div class="pillars-grid">
+              <!-- MISIÓN -->
+              <article class="pillar-card">
+                <div class="pillar-top">
+                  <span class="pillar-chip">Misión</span>
+                </div>
+                <p class="muted justify">
+                  En APPROAMOLI somos una institución en constante crecimiento, comprometida con ofrecer a nuestros socios productos y servicios
+                  de la más alta calidad, garantizando eficiencia, confianza y los mejores costos posibles.
+                </p>
+              </article>
+
+              <!-- VISIÓN -->
+              <article class="pillar-card">
+                <div class="pillar-top">
+                  <span class="pillar-chip">Visión</span>
+                </div>
+                <p class="muted justify">
+                  Ser la institución líder en la provisión de productos avícolas, reconocida a nivel nacional e internacional por nuestros altos
+                  estándares de calidad, el compromiso de nuestro equipo humano y la satisfacción plena de clientes y accionistas.
+                </p>
+              </article>
+
+              <!-- VALORES -->
+              <article class="pillar-card pillar-values">
+                <div class="pillar-top">
+                  <span class="pillar-chip">Valores</span>
+                </div>
+
+                <ul class="values-list-pro">
+                  <li><span class="val-bullet"></span><span>Integridad</span></li>
+                  <li><span class="val-bullet"></span><span>Calidad</span></li>
+                  <li><span class="val-bullet"></span><span>Respeto</span></li>
+                  <li><span class="val-bullet"></span><span>Atención al detalle</span></li>
+                  <li><span class="val-bullet"></span><span>Cercanía con el cliente</span></li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Compromiso -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Nuestro compromiso</h2>
+          <p class="muted justify">
+            Trabajar con responsabilidad y transparencia, apoyando el crecimiento de nuestros socios y del sector agropecuario.
+            Nos comprometemos a ofrecer soluciones de valor, fortalecer la producción nacional y avanzar juntos hacia un desarrollo sostenible
+            que beneficie a nuestras comunidades.
+          </p>
+        </div>
+
+        <div class="commit-grid">
+          <div class="commit-card">
+            <h3>Crecemos Juntos</h3>
+            <p class="muted justify">El progreso de nuestros socios es también nuestro logro.</p>
+          </div>
+          <div class="commit-card">
+            <h3>Confianza</h3>
+            <p class="muted justify">Productos que respaldan una producción segura y eficiente.</p>
+          </div>
+          <div class="commit-card">
+            <h3>Apoyo Permanente</h3>
+            <p class="muted justify">Estamos presentes antes, durante y después de cada proceso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>Approamoli.Online</strong>
+        <p class="muted small">Alimentos & Más</p>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="#">Términos</a>
+        <a href="#">Privacidad</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="footer-right">
+        <span class="muted small">© <span id="year"></span> Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

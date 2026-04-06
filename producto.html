@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Productos — Approamoli.Online</title>
+
+  <link rel="stylesheet" href="styles1.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">🐤</span>
+      <span class="logo-text">APPROAMOLI<span class="dot">.</span>Online(Proyecto de prueba)</span>
+    </a>
+
+    <!-- ⚠️ IMPORTANTE: nav DEBE tener id="nav" -->
+    <nav class="nav" id="nav">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="producto.html" class="nav-link active">Productos</a>
+      <a href="Nosotros.html" class="nav-link">Nosotros</a>
+      <a href="contacto.html" class="nav-link">Contacto</a>
+    </nav>
+
+    <div class="header-cta">
+      <button class="icon-btn" id="wishlistBtn">
+        ❤ <span class="badge" id="wishlistCount">0</span>
+      </button>
+      <button class="icon-btn" id="cartBtn">
+        🛒 <span class="badge" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Todos los productos</h2>
+        <p class="muted">Catálogo completo</p>
+      </div>
+
+      <!-- GRID OBLIGATORIO -->
+      <div class="grid" id="productsGrid"></div>
+    </div>
+  </section>
+</main>
+
+<!-- =============================
+     DRAWER CARRITO (OBLIGATORIO)
+============================= -->
+<aside class="drawer" id="cartDrawer">
+  <div class="drawer-head">
+    <h3>Tu carrito</h3>
+    <button class="icon-btn" id="closeCart">✕</button>
+  </div>
+  <div class="drawer-body" id="cartItems"></div>
+  <div class="drawer-foot">
+    <div class="totals">
+      <span>Total</span>
+      <strong id="cartTotal">$0.00</strong>
+    </div>
+    <button class="btn primary" id="checkoutBtn">Finalizar por WhatsApp</button>
+    <button class="btn ghost" id="clearCartBtn">Vaciar carrito</button>
+  </div>
+</aside>
+
+<!-- =============================
+     DRAWER FAVORITOS (OBLIGATORIO)
+============================= -->
+<aside class="drawer" id="wishlistDrawer">
+  <div class="drawer-head">
+    <h3>Favoritos</h3>
+    <button class="icon-btn" id="closeWishlist">✕</button>
+  </div>
+  <div class="drawer-body" id="wishlistItems"></div>
+</aside>
+
+<!-- =============================
+     MODAL PRODUCTO (OBLIGATORIO)
+============================= -->
+<div class="modal hidden" id="productModal">
+  <div class="modal-card">
+    <button class="icon-btn modal-close" id="closeModal">✕</button>
+    <div class="modal-grid">
+      <img id="modalImg" alt="">
+      <div>
+        <h3 id="modalTitle"></h3>
+        <p class="muted" id="modalDesc"></p>
+        <p class="price" id="modalPrice"></p>
+        <div class="row">
+          <button class="btn primary" id="modalAdd">Agregar al carrito</button>
+          <button class="btn outline" id="modalFav">❤ Favorito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =============================
+     TOAST (OBLIGATORIO)
+============================= -->
+<div class="toast" id="toast"></div>
+
+<!-- =============================
+     ELEMENTOS OCULTOS REQUERIDOS
+     (para que main.js NO se rompa)
+============================= -->
+<div style="display:none">
+  <button id="themeBtn"></button>
+
+  <input id="searchInput">
+  <select id="sortSelect"></select>
+  <input id="priceRange">
+  <span id="priceValue"></span>
+
+  <form id="contactForm"></form>
+  <form id="loginForm"></form>
+  <form id="registerForm"></form>
+  <p id="authStatus"></p>
+
+  <span id="year"></span>
+</div>
+
+<!-- JS -->
+<script src="main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>APPROAMOLI.Online — Fábrica de alimentos, equipos para la avicultura & almacenaje de granos.</title>
+  <meta name="description" content="Papelería premium: cuadernos, lápices, organización y más. Compra fácil, rápido y seguro." />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="chip">Envíos rápidos • A todo el país</span>
+      <div class="topbar-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema" title="Modo claro/oscuro">🌓</button>
+        <a class="link" href="#faq">Ayuda</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Papel.store">
+        <span class="logo-mark">🐤</span>
+        <span class="logo-text">APPROAMOLI<span class="dot">.</span>Online(Proyecto de prueba)</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="producto.html" class="nav-link">Productos</a>
+        <a href="Nosotros.html" class="nav-link">Nosotros</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-cta">
+        <button class="icon-btn" id="wishlistBtn" aria-label="Favoritos" title="Favoritos">
+          ❤ <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Carrito" title="Carrito">
+          🛒 <span class="badge" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="kicker">Nutrición que impulsa la producción</p>
+          <h1 class="hero-title">Núcleo<br><span class="accent">& Premezclas</span></h1>
+          <p class="hero-sub">
+             Nutrición ideal para tus animales: pide hoy por WhatsApp.
+            
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#productos">Ver productos</a>
+            <a class="btn ghost" href="#categorias">Explorar categorías</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat"><strong>+120</strong><span>Productos</span></div>
+            <div class="stat"><strong>24/7</strong><span>Pedidos</span></div>
+            <div class="stat"><strong>⭐ 4.9</strong><span>Valoración</span></div>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <div class="media-frame">
+            <!-- Asegúrate de que esta imagen exista con este nombre -->
+            <img
+              src="imagenes/Approamoli.png"
+              alt="Material de papelería sobre mesa"
+              loading="eager"
+            />
+          </div>
+          <div class="floating-card">
+            <span class="pill">🔥 Oferta del día</span>
+            <p><strong>Crecimiento</strong><br><span class="muted">desde $12.00</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorías -->
+    <section id="categorias" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Categorías</h2>
+          
+        </div>
+
+        <div class="cats">
+          <button class="cat" data-cat="all">✨ Todo</button>
+          <button class="cat" data-cat="Nucleos">🧪 Nucleos</button>
+          <button class="cat" data-cat="Premezclas">⚗️ Premezclas</button>
+          <button class="cat" data-cat="Aves">🐓 Aves</button>
+          <button class="cat" data-cat="Cerdos">🐖 Cerdos</button>
+          <button class="cat" data-cat="Crecimiento">📈 Crecimiento</button>
+
+          <button class="cat" data-cat="Postura">🥚 Postura</button>
+          <button class="cat" data-cat="Engorde">🍽️ Engorde</button>
+          <button class="cat" data-cat="Gestación">🍼 Gestación</button>
+          <button class="cat" data-cat="Levante">🌱 Levante</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos + Herramientas -->
+    <section id="productos" class="section">
+      <div class="container">
+        <div class="section-head tools">
+          <div>
+            <h2>Productos destacados</h2>
+            <p class="muted">Carrito, favoritos, búsqueda y filtros incluidos.</p>
+          </div>
+
+          <div class="toolbox">
+            <label class="input">
+              <span>Buscar</span>
+              <input id="searchInput" type="search" placeholder="Ej. Cerdos, Aves..." autocomplete="off">
+            </label>
+
+            <label class="input">
+              <span>Ordenar</span>
+              <select id="sortSelect">
+                <option value="featured">Destacados</option>
+                <option value="price-asc">Precio: menor a mayor</option>
+                <option value="price-desc">Precio: mayor a menor</option>
+                <option value="name-asc">Nombre: A-Z</option>
+              </select>
+            </label>
+
+            <label class="input">
+              <span>Precio máx.</span>
+              <input id="priceRange" type="range" min="5" max="100" value="100">
+              <small class="muted">Hasta: <strong id="priceValue">$100</strong></small>
+            </label>
+          </div>
+        </div>
+
+        <div class="grid" id="productsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+      <div class="container split">
+        <div>
+          <h2>Contacto</h2>
+          <p class="muted">¿Necesitas un pedido grande para tu granja, negocio o producción?  Escríbenos y te cotizamos al instante.
+</p>
+
+          <div class="contact-cards">
+            <a class="contact-card" href="https://wa.me/18090000000" target="_blank" rel="noopener">
+              <strong>WhatsApp</strong><span class="muted">+1 (809) 000-0000</span>
+            </a>
+            <a class="contact-card" href="mailto:hola@papel.store">
+              <strong>Correo</strong><span class="muted">Approamoli@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="form" id="contactForm">
+          <h3>Envíanos un mensaje</h3>
+          <label class="input">
+            <span>Nombre</span>
+            <input name="name" required placeholder="Tu nombre">
+          </label>
+          <label class="input">
+            <span>Correo</span>
+            <input name="email" type="email" required placeholder="tucorreo@email.com">
+          </label>
+          <label class="input">
+            <span>Mensaje</span>
+            <textarea name="message" rows="4" required placeholder="¿Qué necesitas?"></textarea>
+          </label>
+          <button class="btn primary" type="submit">Enviar</button>
+          <p class="muted small"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Auth (demo) -->
+    <section id="auth" class="section alt">
+      <div class="container split">
+        <div>
+          <h2>Registro e Inicio de Sesión</h2>
+          <p class="muted">Al crear tu cuenta podrás llevar un control más fácil de tus pedidos, guardar los productos que más te interesan y realizar tus compras de forma más rápida en el futuro, sin tener que escribir tus datos cada vez. Esto te ayuda a organizar mejor tus compras y tener una experiencia más cómoda y práctica dentro de la tienda.</p>
+        </div>
+
+        <div class="auth">
+          <div class="tabs">
+            <button class="tab active" data-tab="login">Iniciar sesión</button>
+            <button class="tab" data-tab="register">Registrarme</button>
+          </div>
+
+          <div class="tab-panels">
+            <form class="form" id="loginForm" data-panel="login">
+              <label class="input"><span>Email</span><input name="email" type="email" required></label>
+              <label class="input"><span>Contraseña</span><input name="password" type="password" required minlength="4"></label>
+              <button class="btn primary" type="submit">Entrar</button>
+              <p class="muted small" id="authStatus"></p>
+            </form>
+
+            <form class="form hidden" id="registerForm" data-panel="register">
+              <label class="input"><span>Nombre</span><input name="name" required></label>
+              <label class="input"><span>Email</span><input name="email" type="email" required></label>
+              <label class="input"><span>Contraseña</span><input name="password" type="password" required minlength="4"></label>
+              <button class="btn primary" type="submit">Crear cuenta</button>
+              <p class="muted small">* Demo: guarda localmente en este navegador.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Preguntas frecuentes</h2>
+          <p class="muted">Respuestas rápidas para que el cliente compre sin dudas.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>¿Cómo hago un pedido?</summary>
+            <p>Agrega al carrito y finaliza por WhatsApp con tu listado y total.</p>
+          </details>
+          <details>
+            <summary>¿Hacen envíos?</summary>
+            <p>En Approamoli realizamos envíos para que puedas recibir nuestros productos de forma cómoda y segura donde los necesites. Contamos con opciones de entrega a domicilio, coordinación de envíos a otras zonas y también retiro directo, adaptándonos a tu ubicación y pedido.</p>
+          </details>
+          <details>
+            <summary>¿Puedo pagar contra entrega?</summary>
+            <p>Sí, en Approamoli puedes pagar contra entrega para mayor comodidad y confianza. Recibes tu pedido primero y realizas el pago al momento de la entrega, de forma fácil y segura.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <strong>Approamoli</strong>
+          <p class="muted small">Alimentos & Mas</p>
+        </div>
+
+        <nav class="footer-nav">
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+
+        <div class="footer-right">
+          <span class="muted small">© <span id="year"></span> Todos los derechos reservados.</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- DRAWERS / MODALS -->
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Tu carrito</h3>
+      <button class="icon-btn" id="closeCart" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="totals">
+        <span class="muted">Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button class="btn primary" id="checkoutBtn">Finalizar por WhatsApp</button>
+      <button class="btn ghost" id="clearCartBtn">Vaciar carrito</button>
+    </div>
+  </aside>
+
+  <aside class="drawer" id="wishlistDrawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Favoritos</h3>
+      <button class="icon-btn" id="closeWishlist" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="drawer-body" id="wishlistItems"></div>
+  </aside>
+
+  <div class="modal hidden" id="productModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Detalles del producto">
+      <button class="icon-btn modal-close" id="closeModal" aria-label="Cerrar">✕</button>
+      <div class="modal-grid">
+        <img id="modalImg" alt="" />
+        <div>
+          <h3 id="modalTitle"></h3>
+          <p class="muted" id="modalDesc"></p>
+          <p class="price" id="modalPrice"></p>
+          <div class="row">
+            <button class="btn primary" id="modalAdd">Agregar al carrito</button>
+            <button class="btn outline" id="modalFav">❤ Favorito</button>
+          </div>
+          <p class="muted small">* Demo: inventario y envíos configurables en JS.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
